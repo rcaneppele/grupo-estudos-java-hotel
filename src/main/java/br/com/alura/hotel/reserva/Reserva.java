@@ -3,8 +3,6 @@ package br.com.alura.hotel.reserva;
 import br.com.alura.hotel.acomodacao.TipoAcomodacao;
 import br.com.alura.hotel.hospede.Hospede;
 
-import java.time.LocalDate;
-
 public class Reserva {
 
     private Hospede hospede;
