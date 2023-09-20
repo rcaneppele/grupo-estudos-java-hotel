@@ -8,10 +8,10 @@ public class TipoAcomodacao {
 
     private String nome;
     private BigDecimal precoPorNoite;
-    private Short capacidade;
+    private Byte capacidade;
     private List<Comodidade> comodidades = new ArrayList<>();
 
-    public TipoAcomodacao(String nome, BigDecimal precoPorNoite, Short capacidade, List<Comodidade> comodidades) {
+    public TipoAcomodacao(String nome, BigDecimal precoPorNoite, Byte capacidade, List<Comodidade> comodidades) {
         this.nome = nome;
         this.precoPorNoite = precoPorNoite;
         this.capacidade = capacidade;
@@ -36,7 +36,7 @@ public class TipoAcomodacao {
         return precoPorNoite;
     }
 
-    public Short getCapacidade() {
+    public Byte getCapacidade() {
         return capacidade;
     }
 
