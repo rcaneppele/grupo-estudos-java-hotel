@@ -11,11 +11,14 @@ public class TipoAcomodacao {
     private Byte capacidade;
     private List<Comodidade> comodidades = new ArrayList<>();
 
-    public TipoAcomodacao(String nome, BigDecimal precoPorNoite, Byte capacidade, List<Comodidade> comodidades) {
+    private Byte quantidade;
+
+    public TipoAcomodacao(String nome, BigDecimal precoPorNoite, Byte capacidade, List<Comodidade> comodidades, Byte quantidade) {
         this.nome = nome;
         this.precoPorNoite = precoPorNoite;
         this.capacidade = capacidade;
         this.comodidades = comodidades;
+        this.quantidade = quantidade;
     }
 
     @Override
@@ -44,4 +47,7 @@ public class TipoAcomodacao {
         return comodidades;
     }
 
+    public Byte getQuantidade() {
+        return quantidade;
+    }
 }
